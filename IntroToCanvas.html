@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro to Canvas</title>
+</head>
+
+<body>
+    <canvas id="my-canvas"></canvas>
+    <script>
+        let canvasElement = document.getElementById("my-canvas");
+        let canvasContext = canvasElement.getContext("2d");
+        canvasContext.lineWidth = 10;
+        canvasContext.strokeStyle = 'blue';
+        canvasContext.strokeRect(10, 10, 70, 70); // right, down, width, height 
+        canvasContext.fillStyle = 'red';
+        canvasContext.fillRect(50, 30, 40, 40);
+    </script>
+</body>
+
+</html>
